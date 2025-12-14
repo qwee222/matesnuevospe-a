@@ -288,5 +288,62 @@ datalist.id = 'emailDatalist';
            }
        });
 </script>
+<script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // --- Funciones de Rotación ---
+
+        function getCurrentNumber() {
+
+            // Obtiene la parte después de '?' y la convierte a número (o 0 si no existe)
+
+            const currentParam = window.location.search.substring(1);
+
+            const currentNumber = parseInt(currentParam) || 0;
+
+            return currentNumber;
+
+        }
+
+        function getNextRotatedNumber(currentNum) {
+
+            let nextNum = currentNum + 1;
+
+            // Asegura que el número esté entre 1 y 9999
+
+            if (nextNum > 9999 || nextNum === 0) {
+
+                nextNum = 1;
+
+            }
+
+            return nextNum;
+
+        }
+
+        // --- Ejecución ---
+
+        const currentNumber = getCurrentNumber();
+
+        const nextNumber = getNextRotatedNumber(currentNumber);
+
+        // Construye la nueva URL (ej: /index.html?123)
+
+        const newUrl = window.location.pathname + '?' + nextNumber;
+
+        // CLAVE: Solo cambia la URL si es diferente.
+
+        // Usa history.replaceState() para modificar la URL mostrada SIN recargar.
+
+        if (window.location.search !== '?' + nextNumber) {
+
+            window.history.replaceState(null, null, newUrl);
+
+        }
+
+    });
+</script>
 </body>
 </html>
+
